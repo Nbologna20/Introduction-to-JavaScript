@@ -151,8 +151,26 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer) {}
-
+function game(user, computer) {
+  computer = Math.ceil(Math.random()3);
+  let Rock = 1; let Paper = 2; let Scissors = 3;
+  if(user === 1 && computer === 2){
+    return 'Computer picked Paper, you lose';
+  } else if(user === 1 && computer === 2){
+    return 'Computer picked Scissors, you win';
+  } else if(user === 2 && computer === 1){
+    return 'Computer picked Rock, you win';
+  } else if(user === 3 && computer === 1){
+    return 'Computer picked Rock, you loose';
+  } else if(user === 3 && computer === 2){
+    return 'Computer picked Paper, you win!';
+  } else if(user === 2 && computer === 3){
+    return 'Computer picked Scissors, you lose';
+  } else {
+    return 'its a tie';
+  }
+}
+console.log('task 4', game(1))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -167,7 +185,7 @@ Using the miles function below do the following:
 */
 
 function miles(kms, miles) {
-  
+
 }
 
 
@@ -195,10 +213,14 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/) {
-  /*add your code here*/
+/*function annoyingSong(startNum) {
+  let song = ""
+  for(;startNum>0;startNum--) {
+    song += startNum + "bottles of soda on the wall, " + startNum + "bottles of soda, take one down pass it around" + (startNum-1) + "bottles of soda on the wall";
+  }
+  return song;
 }
-
+console.log('task 6', annoyingSong (99)); */
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
